@@ -13,7 +13,7 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    environment: ${{ github.ref == 'refs/heads/main' && 'discord.gg/bloodpoints' || 'Test' }}
+    environment: ${{ github.event_name != 'workflow_dispatch' && 'discord.gg/bloodpoints' || 'discord.gg/5PSfCFb8Th' }}
 
     steps:
       - name: Checkout code
