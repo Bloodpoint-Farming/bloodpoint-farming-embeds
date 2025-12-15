@@ -1,0 +1,16 @@
+{
+  "name": "bloodpoint-farming-embeds",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.25.0",
+  "description": "Sync Discord embeds from JSON files to channels",
+  "main": "scripts/sync-embeds.js",
+  "scripts": {
+    "sync": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/sync-embeds.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

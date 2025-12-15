@@ -1,0 +1,11 @@
+{
+  "title": "Welcome to Bloodpoint Farming!",
+  "description": "This is an example embed with an image attachment.",
+  "color": 16711680,
+  "gallery": [
+    "attachment://WelcomeBanner.webp"
+  ],
+  "footer": {
+    "text": "Enjoy farming!"
+  }
+}
