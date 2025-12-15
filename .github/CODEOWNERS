@@ -1,0 +1,10 @@
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Repo settings, documentation, workflows, and anything else unclaimed
+@snoggles
+
+# Channel embed content
+channels @Bloodpoint-Farming/embeds
+
+# Node and bot machinery
+scripts @Bloodpoint-Farming/js
