@@ -1,6 +1,6 @@
 # Bloodpoint Farming Embeds
 
-This repo controls the embeds in static channels in https://discord.gg/bloodpoints such as #welcome, #rules, etc.
+This repo creates the pretty embeds for our static info channels such as #welcome, #rules, etc.
 
 Changes are synced to discord on merge to main.
 
