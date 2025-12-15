@@ -1,0 +1,70 @@
+name: Sync Discord Embeds
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'channels/**'
+      - 'scripts/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment: ${{ github.event_name == 'push' && 'Main' || 'Test Server' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Get changed channels
+        id: changed-channels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let changedFiles;
+            if (context.eventName === 'push') {
+              // For pushes, use git diff
+              const { exec } = require('child_process');
+              const { promisify } = require('util');
+              const execAsync = promisify(exec);
+              try {
+                const { stdout } = await execAsync('git diff --name-only HEAD~1 HEAD -- channels/');
+                changedFiles = stdout.trim().split('\n').filter(f => f);
+              } catch (error) {
+                changedFiles = [];
+              }
+            } else if (context.eventName === 'pull_request') {
+              // For PRs, get changed files from GitHub API
+              const pr = context.payload.pull_request;
+              const response = await github.rest.pulls.listFiles({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number
+              });
+              changedFiles = response.data.map(f => f.filename).filter(f => f.startsWith('channels/'));
+            } else {
+              changedFiles = [];
+            }
+            // Extract unique channel names (folder names)
+            const changedChannels = [...new Set(changedFiles.map(f => f.split('/')[1]).filter(Boolean))];
+            core.setOutput('changed_channels', changedChannels.join(' '));
+
+      - name: Sync embeds
+        if: steps.changed-channels.outputs.changed_channels != ''
+        run: npm run sync
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          GUILD_ID: ${{ secrets.GUILD_ID }}
+          CHANGED_CHANNELS: ${{ steps.changed-channels.outputs.changed_channels }}

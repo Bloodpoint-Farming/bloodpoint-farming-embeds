@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Sync Channels",
+      "skipFiles": ["<node_internals>/**"],
+      "envFile": "${workspaceFolder}/.env.local",
+      "program": "${workspaceFolder}\\scripts\\sync-embeds.js",
+      "outFiles": ["${workspaceFolder}/**/*.js"]
+    }
+  ]
+}
