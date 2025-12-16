@@ -82,19 +82,33 @@ async function syncEmbeds() {
 
       for (const file of files) {
         const filePath = path.join(channelPath, file);
-        const embedData = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-        const attachmentFiles = collectAttachments(embedData);
-        const filesToAttach = attachmentFiles
-          .map((file) => {
-            const imagePath = path.join(channelPath, file);
-            if (fs.existsSync(imagePath)) {
-              return { attachment: imagePath, name: file };
-            }
-          })
-          .filter(Boolean);
+        let messages = [];
+        if (Array.isArray(data)) {
+          // Top-level array: each element is an embed message
+          messages = data.map(embed => ({ embeds: [embed] }));
+        } else if (data.embeds) {
+          // Top-level object with "embeds" property
+          messages = [{ embeds: data.embeds }];
+        } else {
+          // Assume single embed object (backward compatibility)
+          messages = [{ embeds: [data] }];
+        }
 
-        await channel.send({ embeds: [embedData], files: filesToAttach });
+        for (const message of messages) {
+          const attachmentFiles = collectAttachments(message);
+          const filesToAttach = attachmentFiles
+            .map((file) => {
+              const imagePath = path.join(channelPath, file);
+              if (fs.existsSync(imagePath)) {
+                return { attachment: imagePath, name: file };
+              }
+            })
+            .filter(Boolean);
+
+          await channel.send({ ...message, files: filesToAttach });
+        }
       }
     }
 

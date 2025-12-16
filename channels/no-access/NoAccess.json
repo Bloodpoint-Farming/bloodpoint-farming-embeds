@@ -1,0 +1,32 @@
+{
+  "username": "Bloodpoint Farming",
+  "avatar_url": "https://media.discordapp.net/attachments/1137447758257737748/1372331452989046945/RedLogo.png?ex=68358c03&is=68343a83&hm=9afde09d7c7d7fc27ed1291f2b003a4c05c0265adc4d1fddbd75e24dcebd7f48&=&format=webp&quality=lossless&width=922&height=968",
+  "embeds": [
+    {
+      "description": "You’ve been placed in <#1228108116831371484>, likely due to suspicious activity or a rules violation. Please review our rules and wait for a staff member to contact you via a ticket.",
+      "color": 16711680,
+      "title": "No Access"
+    },
+    {
+      "description": "# 1. Server Basics\n**A. ‎English Only** 🌐\n-# This server is English-only to ensure clear communication and effective moderation. A [TTS bot](https://discord.com/channels/1204097271768023090/1376561991958925383/1376562304883101778) is available to help non-English speakers.\n**B. ‎Use of Content** 📌\n-# All content in official server channels is property of the server or its creators. Do not use or repost it outside the server without permission. Publicly broadcasting farming (e.g., on YouTube, TikTok, Twitch) is prohibited.\n**C. Do Not Discuss Banned Topics** :hammer: \n-# In order to stay aligned with [BHVR's terms of service](https://www.bhvr.com/terms-of-use/), discussions about Asia farming, cheats/injects, or leaks are prohibited. Any mention of these topics will be removed and may result in disciplinary action.",
+      "color": 16711680,
+      "gallery": ["attachment://RulesBanner.png"]
+    },
+    {
+      "description": "# 2. Respect Others\n‎**A. Be Cool, Kind, Respectful** 🙂\n-# Treat everyone with decency. Toxic behavior, harassment, and targeted insults will not be tolerated.\n‎**B. No Spamming** 💬\n-# This includes excessive messages, emojis, attachments, links, pings, and mic spam. Keep communication clear and comfortable for all.\n**‎C. No Self-Promotion or Advertising** 📢\n-# Promoting Discord servers, social media, products, and services in public channels or direct messages is not allowed without staff approval.\n",
+      "color": 16711680
+    },
+    {
+      "description": "# 3. Don't Create Problems\n**A. ‎No Political or Religious Topics** ⚖️\n-# Avoid discussions on politics and religion to maintain a neutral and welcoming environment.\n**‎B. No Hate Speech or Harmful Language** 😠\n-# Racism, sexism, discrimination, and personal attacks are strictly prohibited.\n**‎C. Inappropriate Profiles** 👤\n-# Keep publicly displayed info appropriate and respectful for all audiences (username, nickname, avatar, banner, pronouns, about me, connections, etc.).\n‎**D. No Piracy, NSFW, or Suspicious Content** 🔞\n-# This includes illegal downloads, adult content, or any content that violates [Discord's Terms of Service](https://discord.com/terms).\n**‎E. Personal Information** 🔒\n-# For everyone’s safety, avoid sharing personal info (addresses, phone numbers, emails, socials, etc.). Webcam feeds are fine for gameplay with overlays, but using them to show faces is not allowed.",
+      "color": 16711680
+    },
+    {
+      "description": "# 4. We're Here to Farm\n**‎A. No Griefing or Trolling In-Game** 👺\n-# Repeated bodyblocking, dodging killer swings, failing to follow group-specific requirements, purposefully bringing incorrect perks or offerings, or any other actions that prolong matches are against the rules.\n",
+      "color": 16711680
+    },
+    {
+      "description": "# 5. Final Notes\n‎**A. Use Common Sense** 🧠\n-# If you think something might be against the rules, it probably is. When in doubt, ask staff via ⁠<#1233111063503835268>.\n‎**B. Ban Evasion and Alt Accounts** 🕵️\n-# Using alt accounts to avoid bans will result in further removal and decrease the likelihood of being unbanned. If you wish to appeal a ban, send a direct message to <@414487291755757578> (saharawastaken).\n‎**C. Staff Discretion** :shield:\n-# Staff have the right to remove anyone they believe is not a good fit for the community, even if no specific rule has been broken. Members are expected to respect and follow staff instructions at all times.",
+      "color": 16711680
+    }
+  ]
+}

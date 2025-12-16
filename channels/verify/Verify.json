@@ -1,0 +1,19 @@
+{
+  "username": "Bloodpoint Farming",
+  "avatar_url": "https://media.discordapp.net/attachments/1137447758257737748/1371210825255227453/1.png?ex=686e1d58&is=686ccbd8&hm=ff57732248eabe52a2923e22ae6981e614f7ac34af9fe8d33b2159ee2e9b32d3&=&format=webp&quality=lossless&width=1029&height=1080",
+  "embeds": [
+    {
+      "title": "Verifying Users :white_check_mark:",
+      "description": "\n\nWe use [Double Counter](https://doublecounter.gg/) to help keep the server safe and detect users attempting to join with alt accounts. All successful verifications and attempted alt account intrusions are logged in <#1243689429441445888>.\n- When a user joins the server, they are automatically given the <@&1393718800062353408> role: \n  - Limited access to server channels \n  - Unable to connect to voice channels (VCs) \n- After completing the [verification process](https://ptb.discord.com/channels/1204097271768023090/1393747831583408168), they are granted the <@&1204119127401173012> role, which unlocks full access to the server. \n- Some users may join with alt accounts for non-malicious reasons. In such cases, it is acceptable for staff members to manually verify the account. \n\n\n",
+      "color": 2375524,
+      "gallery": ["attachment://VerifyBanner.webp"],
+      "fields": [
+        {
+          "name": "Commands:",
+          "value": "- `/force [user/ID]` - Forces a user to verify\n- `/manverify [user/ID]` - Manually verifies a user"
+        }
+      ]
+    }
+  ],
+  "components": []
+}
