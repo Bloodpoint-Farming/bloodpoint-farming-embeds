@@ -1,0 +1,49 @@
+{
+  "username": "Bloodpoint Farming",
+  "avatar_url": "https://media.discordapp.net/attachments/1137447758257737748/1371210825255227453/1.png?ex=688a7598&is=68892418&hm=66bb38cfa77c08329dca81062409d1fa56d631c224b11c6241e2b1f59224737e&=&format=webp&quality=lossless&width=1029&height=1080",
+  "author": {
+    "name": "Bloodpoint Farming",
+    "icon_url": "https://media.discordapp.net/attachments/1137447758257737748/1358074368206438632/1_2.png?ex=680d8b91&is=680c3a11&hm=0bef9310875dcc00122a9db87d86c2f0dcd553f528ff3c43f2531ea9fec945f6&=&format=webp&quality=lossless&width=282&height=282"
+  },
+  "content": null,
+  "embeds": [
+    {
+      "title": "Table of Contents",
+      "description": "Find the answers to Frequently Asked Questions below! If you don't see what you're looking for, feel free to create a support ticket and submit your question to have it added!",
+      "color": 2375525,
+      "gallery": ["attachment://FaqBanner.webp"],
+      "fields": [
+        {
+          "name": "Getting Started",
+          "value": "- [How Does Farming Work?](https://discord.com/channels/1204097271768023090/1376558431665782895/1376558431665782895)\n- [How Do I Join a Farming Group?](https://discord.com/channels/1204097271768023090/1376558693818044488/1376558693818044488)\n- [How Do I Start a Farming Group?](https://discord.com/channels/1204097271768023090/1376558874236027050/1376558874236027050)\n- [Why Was I Removed From a Group?](https://discord.com/channels/1204097271768023090/1376559168520982639/1376559168520982639)\n- [What's the Difference Between Chill and Focused Farming?](https://discord.com/channels/1204097271768023090/1376559261156380702/1376559261156380702)",
+          "inline": false
+        },
+        {
+          "name": "Matching",
+          "value": "- [How Can I Change My Region?](https://discord.com/channels/1204097271768023090/1376559307851694150/1376559307851694150)\n- [How Can I See My MMR (Matchmaking Rating)?](https://discord.com/channels/1204097271768023090/1376559417415438346/1376559417415438346)\n- [Can I Farm With Players on Different Platforms?](https://discord.com/channels/1204097271768023090/1376559510189244467/1376559510189244467)",
+          "inline": false
+        },
+        {
+          "name": "Farming",
+          "value": "- [Do I Need Specific Perks and Offerings to Farm?](https://discord.com/channels/1204097271768023090/1376559603243815053/1376559603243815053)\n- [How Many Bloodpoints Can I Earn Per Match?](https://discord.com/channels/1204097271768023090/1376559900137881641/1376559900137881641)\n- [Which Farming Build Is Better, and Why?](https://discord.com/channels/1204097271768023090/1376561028950790144/1376561028950790144)\n- [Can I Do Daily Challenges, Archives, and Achievements in a Farming Match?](https://discord.com/channels/1204097271768023090/1376561259243241472/1376561259243241472)",
+          "inline": false
+        },
+        {
+          "name": "Techs",
+          "value": "- [How to Do Inline Hooking](https://discord.com/channels/1204097271768023090/1376563285666697296/1376563285666697296)\n- [How to Do Pair Hooking](https://discord.com/channels/1204097271768023090/1376563585760628778/1376563585760628778)\n- [How to Do Reactive Healing](https://discord.com/channels/1204097271768023090/1376563831290990722/1376563831290990722)\n- [How to Do 4-Man Generator Regression](https://discord.com/channels/1204097271768023090/1376564113429237781/1376564113429237781)\n- [How to Do Blight Rushes](https://discord.com/channels/1204097271768023090/1376564367146876998/1376564367146876998)\n- [How to Do Inline Blinds With Heals](https://discord.com/channels/1204097271768023090/1376564700107505815/1376564700107505815)\n- [How to Do Inline Blinds](https://discord.com/channels/1204097271768023090/1376564943301644318/1376564943301644318)",
+          "inline": false
+        },
+        {
+          "name": "Communication",
+          "value": "- [Can I Farm Without Using a Mic?](https://discord.com/channels/1204097271768023090/1376561513342435418/1376561513342435418)\n- [How Do I Communicate My In-Game Position When in a Farming Match?](https://discord.com/channels/1204097271768023090/1376561563997049032/1376561563997049032)",
+          "inline": false
+        },
+        {
+          "name": "Other",
+          "value": "- [Is Farming Bannable?](https://discord.com/channels/1204097271768023090/1376561689876631592/1376561689876631592)\n- [Can I Use Cheats or Injected Accounts?](https://ptb.discord.com/channels/1204097271768023090/1399878354378690711/1399878354378690711)\n- [Can I Discuss Asia/Korea Farming in This Server?](https://discord.com/channels/1204097271768023090/1376561856495484999/1376561856495484999)\n- [How Do I Earn Specific Roles?](https://discord.com/channels/1204097271768023090/1376561991958925383/1376561991958925383)",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}
