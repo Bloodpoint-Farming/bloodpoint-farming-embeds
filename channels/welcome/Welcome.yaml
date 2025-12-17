@@ -1,0 +1,42 @@
+embeds:
+  - description: |-
+      ## Welcome to the Bloodpoint Farming Discord Server :wave: 
+      We’re excited to have you here! To get started, make sure to check out a few important channels:
+      📜 <#1204103538775556166> – Read the rules to help make the server fun for all.
+      :white_check_mark: <#1393747831583408168> – Get Verified to gain access to the server.
+      ❓ <#1249663501883015209> – Got questions? You might find your answers here!
+      💬 <#1210119729092763658> – Jump in and say hi! We’d love to get to know you.
+      🎟️ <#1233111063503835268> – Need help? Open a ticket and our team will assist you.
+
+      Once you're ready to farm, head over to one of the [*Looking for Players*](https://discord.com/channels/1204097271768023090/1211197134016225280) channels to join a group and connect with other farmers. Alternatively, you can join one of the [*Waiting Room*](https://discord.com/channels/1204097271768023090/1266771127905157201) VCs to be dragged in once a spot opens up!
+    color: 2375525
+    gallery:
+      - attachment://WelcomeBanner.webp
+  - description: |-
+      ## Introducing the Staff Team :shield: 
+      We expect our staff to uphold a high standard and treat everyone with respect to allow us to maintain a positive environment. If you would like to reach out to the staff team or make a complaint, visit <#1233111063503835268> and open the appropriate ticket!
+    color: 2375525
+    fields:
+      - name: Admins <:zAdministrator:1318646409217703986>
+        value: |-
+          > <@414487291755757578>
+          > <@298899398610649089>
+          > <@184516916793049095>
+        inline: true
+      - name: Mods <:zModerator:1318646412207980756>
+        value: |-
+          > <@773408059056980040>
+          > <@227861757861953536>
+          > <@196878327191961601>
+        inline: true
+      - name: Helpers <:zHelper:1318646410400239738>
+        value: |-
+          > <@342153078532734978>
+          > <@186476897364869120>
+          > <@713551816196882527>
+          > <@488337607948763138>
+        inline: true
+  - description: |-
+      ## Share our Invite Link :link: ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
+      ```https://discord.gg/bloodpoints```
+    color: 2375525

@@ -1,0 +1,49 @@
+embeds:
+- description: |-
+    # 1. Server Basics
+    **A. English Only** 🌐
+    -# This server is English-only to ensure clear communication and effective moderation. A [TTS bot](https://discord.com/channels/1204097271768023090/1376561991958925383/1376562304883101778) is available to help non-English speakers.
+    **B. Use of Content** 📌
+    -# All content in official server channels is property of the server or its creators. Do not use or repost it outside the server without permission. Publicly broadcasting farming (e.g., on YouTube, TikTok, Twitch) is prohibited.
+    **C. Do Not Discuss Banned Topics** 🔨
+    -# In order to stay aligned with [BHVR's terms of service](https://www.bhvr.com/terms-of-use/), discussions about Asia farming, cheats/injects, or leaks are prohibited. Any mention of these topics will be removed and may result in disciplinary action.
+  color: 2375525
+  gallery:
+  - attachment://RulesBanner.webp
+- description: |-
+    # 2. Respect Others
+    **A. Be Cool, Kind, Respectful** 🙂
+    -# Treat everyone with decency. Toxic behavior, harassment, and targeted insults will not be tolerated.
+    **B. No Spamming** 💬
+    -# This includes excessive messages, emojis, attachments, links, pings, and mic spam. Keep communication clear and comfortable for all.
+    **C. No Self-Promotion or Advertising** 📢
+    -# Promoting Discord servers, social media, products, and services in public channels or direct messages is not allowed without staff approval.
+  color: 2375525
+- description: |-
+    # 3. Don't Create Problems
+    **A. No Political or Religious Topics** ⚖️
+    -# Avoid discussions on politics and religion to maintain a neutral and welcoming
+    environment.
+    **B. No Hate Speech or Harmful Language** 😠
+    -# Racism, sexism, discrimination, and personal attacks are strictly prohibited.
+    **C. Inappropriate Profiles** 👤
+    -# Keep publicly displayed info appropriate and respectful for all audiences (username, nickname, avatar, banner, pronouns, about me, connections, etc.).
+    **D. No Piracy, NSFW, or Suspicious Content** 🔞
+    -# This includes illegal downloads, adult content, or any content that violates [Discord's Terms of Service](https://discord.com/terms).
+    **E. Personal Information** 🔒
+    -# For everyone’s safety, avoid sharing personal info (addresses, phone numbers, emails, socials, etc.). Webcam feeds are fine for gameplay with overlays, but using them to show faces is not allowed.
+  color: 2375525
+- description: |-
+    # 4. We're Here to Farm
+    **A. No Griefing or Trolling In-Game** 👺
+    -# Repeated bodyblocking, dodging killer swings, failing to follow group-specific requirements, purposefully bringing incorrect perks or offerings, or any other actions that prolong matches are against the rules.
+  color: 2375525
+- description: |-
+    # 5. Final Notes
+    **A. Use Common Sense** 🧠
+    -# If you think something might be against the rules, it probably is. When in doubt, ask staff via ⁠<#1233111063503835268>.
+    **B. Ban Evasion and Alt Accounts** 🕵️
+    -# Using alt accounts to avoid bans will result in further removal and decrease the likelihood of being unbanned. If you wish to appeal a ban, send a direct message to <@414487291755757578> (saharawastaken).
+    **C. Staff Discretion** :shield:
+    -# Staff have the right to remove anyone they believe is not a good fit for the community, even if no specific rule has been broken. Members are expected to respect and follow staff instructions at all times.
+  color: 2375525
