@@ -1,6 +1,7 @@
 const { Client, GatewayIntentBits } = require("discord.js");
 const fs = require("fs");
 const path = require("path");
+const yaml = require("js-yaml");
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const GUILD_ID = process.env.GUILD_ID;
@@ -61,7 +62,7 @@ async function syncEmbeds() {
 
       const files = fs
         .readdirSync(channelPath)
-        .filter((file) => file.endsWith(".json"))
+        .filter((file) => file.endsWith(".json") || file.endsWith(".yaml"))
         .sort(); // lexicographical order
 
       if (files.length <= 0) {
@@ -100,7 +101,12 @@ async function syncEmbeds() {
 
       for (const file of files) {
         const filePath = path.join(channelPath, file);
-        const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        let data;
+        if (file.endsWith('.json')) {
+          data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        } else if (file.endsWith('.yaml')) {
+          data = yaml.load(fs.readFileSync(filePath, "utf8"));
+        }
 
         let messages = [];
         if (Array.isArray(data)) {
