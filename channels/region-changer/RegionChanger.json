@@ -14,8 +14,8 @@
       "gallery": ["attachment://RegionChangerBanner.webp"],
       "fields": [
         {
-          "name": "Intructions:",
-          "value": "1. Download the latest version of [Python](https://www.python.org/downloads/).\n2. Download and run [RegionChanger.py](https://github.com/snoggles/Dead-by-Daylight-Region-Changer/releases/latest/download/RegionChanger.py).\n  - [Windows instructions](https://github.com/snoggles/Dead-by-Daylight-Region-Changer/blob/main/README.md#windows-setup)\n  - [Linux instructions](https://github.com/snoggles/Dead-by-Daylight-Region-Changer/blob/main/README.md#linux-setup)\n2. To change region, type it's corresponding number and press ENTER.\n  - Restart DBD.\n3. To restore the hosts file, type '0' and press ENTER.\n  - Restart DBD.\n"
+          "name": "Instructions:",
+          "value": "1. Download the latest version of [Python](https://www.python.org/downloads/).\n2. Download and run [RegionChanger.py](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/releases/latest/download/RegionChanger.py).\n  - [Windows instructions](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/blob/main/README.md#windows-setup)\n  - [Linux instructions](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/blob/main/README.md#linux-setup)\n2. To change region, type it's corresponding number and press ENTER.\n  - Restart DBD.\n3. To restore the hosts file, type '0' and press ENTER.\n  - Restart DBD.\n"
         }
       ]
     },
@@ -25,15 +25,15 @@
       "description": "Manually change your hosts file without the need for scripts or administrative permissions.",
       "fields": [
         {
-          "name": "Intructions:",
-          "value": "1. Backup your `C:\\Windows\\System32\\drivers\\etc\\hosts` by copying and saving it elsewhere.\n2. Download [dbd-hosts-file-overrides-main.zip](https://github.com/snoggles/dbd-hosts-file-overrides/archive/refs/heads/main.zip).\n3. To change region, copy the `hosts` file for your desired region from the zip and paste it in the path from Step 1.\n  - Restart DBD.\n4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.\n  - Restart DBD.\n"
+          "name": "Instructions:",
+          "value": "1. Backup your `C:\\Windows\\System32\\drivers\\etc\\hosts` by copying and saving it elsewhere.\n2. Download [dbd-hosts-file-overrides-main.zip](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/archive/refs/heads/main.zip).\n3. To change region, copy the `hosts` file for your desired region from the zip and paste it in the path from Step 1.\n  - Restart DBD.\n4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.\n  - Restart DBD.\n"
         }
       ]
     },
     {
       "title": "Notes",
       "color": 2375525,
-      "description": "- View the README on GitHub to find specifics and source code.‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎\n  - [Python Region Changer](https://github.com/snoggles/Dead-by-Daylight-Region-Changer/blob/main/README.md)\n  - [Hosts File Overrides](https://github.com/snoggles/dbd-hosts-file-overrides/blob/main/README.md)\n- Works for Windows and Linux (SteamOS) and all PC platforms.\n- While no one has been banned for using this tool, use at your own risk."
+      "description": "- View the README on GitHub to find specifics and source code.‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎\n  - [Python Region Changer](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/blob/main/README.md)\n  - [Hosts File Overrides](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md)\n- Works for Windows and Linux (SteamOS) and all PC platforms.\n- While no one has been banned for using this tool, use at your own risk."
     }
   ]
 }
