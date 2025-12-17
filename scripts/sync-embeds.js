@@ -4,15 +4,17 @@ const path = require("path");
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const GUILD_ID = process.env.GUILD_ID;
-const CHANGED_CHANNELS = process.env.CHANGED_CHANNELS ? process.env.CHANGED_CHANNELS.split(' ') : [];
+const CHANGED_CHANNELS = process.env.CHANGED_CHANNELS
+  ? process.env.CHANGED_CHANNELS.split(" ")
+  : [];
 
 if (!BOT_TOKEN) {
-  console.error('BOT_TOKEN environment variable is not set');
+  console.error("BOT_TOKEN environment variable is not set");
   process.exit(1);
 }
 
 if (!GUILD_ID) {
-  console.error('GUILD_ID environment variable is not set');
+  console.error("GUILD_ID environment variable is not set");
   process.exit(1);
 }
 
@@ -49,10 +51,11 @@ async function syncEmbeds() {
     const guild = await client.guilds.fetch(GUILD_ID);
     const channels = await guild.channels.fetch();
 
-    const channelsToSync = CHANGED_CHANNELS.length > 0 ? CHANGED_CHANNELS : getAllChannelDirs();
+    const channelsToSync =
+      CHANGED_CHANNELS.length > 0 ? CHANGED_CHANNELS : getAllChannelDirs();
 
     for (const channelName of channelsToSync) {
-        // Get JSON files
+      // Get JSON files
       const channelPath = path.join(__dirname, "..", "channels", channelName);
       if (!fs.existsSync(channelPath)) continue;
 
@@ -62,6 +65,7 @@ async function syncEmbeds() {
         .sort(); // lexicographical order
 
       if (files.length <= 0) {
+        console.log(`Skipping channel: ${channelName}. No JSON files.`);
         continue;
       }
 
@@ -91,7 +95,7 @@ async function syncEmbeds() {
         let messages = [];
         if (Array.isArray(data)) {
           // Top-level array: each element is an embed message
-          messages = data.map(embed => ({ embeds: [embed] }));
+          messages = data.map((embed) => ({ embeds: [embed] }));
         } else if (data.embeds) {
           // Top-level object with "embeds" property
           messages = [{ embeds: data.embeds }];
