@@ -52,6 +52,19 @@ async function syncEmbeds() {
     const channelsToSync = CHANGED_CHANNELS.length > 0 ? CHANGED_CHANNELS : getAllChannelDirs();
 
     for (const channelName of channelsToSync) {
+        // Get JSON files
+      const channelPath = path.join(__dirname, "..", "channels", channelName);
+      if (!fs.existsSync(channelPath)) continue;
+
+      const files = fs
+        .readdirSync(channelPath)
+        .filter((file) => file.endsWith(".json"))
+        .sort(); // lexicographical order
+
+      if (files.length <= 0) {
+        continue;
+      }
+
       const channel = channels.find(
         (ch) => ch.name === channelName && ch.isTextBased()
       );
@@ -70,15 +83,6 @@ async function syncEmbeds() {
           await channel.bulkDelete(messages);
         }
       } while (messages.size === 100);
-
-      // Get JSON files
-      const channelPath = path.join(__dirname, "..", "channels", channelName);
-      if (!fs.existsSync(channelPath)) continue;
-
-      const files = fs
-        .readdirSync(channelPath)
-        .filter((file) => file.endsWith(".json"))
-        .sort(); // lexicographical order
 
       for (const file of files) {
         const filePath = path.join(channelPath, file);
