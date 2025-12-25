@@ -4,35 +4,50 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "channels/**"
   workflow_dispatch:
     inputs:
-      pr_number:
-        description: PR number to preview
-        required: true
+      regenerate_all:
+        description: "Regenerate all channels"
+        type: boolean
+        default: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    environment: ${{ github.event_name != 'workflow_dispatch' && 'discord.gg/bloodpoints' || 'discord.gg/5PSfCFb8Th' }}
+    environment: ${{ (github.event_name != 'workflow_dispatch' || github.ref_name == 'main') && 'discord.gg/bloodpoints' || 'discord.gg/5PSfCFb8Th' }}
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
+
+      - name: Get changed channels
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: channels/**
+          dir_names: true
+          dir_names_max_depth: 2
 
       - name: Setup Node.js
+        if: github.event.inputs.regenerate_all == 'true' || steps.changed-files.outputs.any_changed == 'true'
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: "24"
 
       - name: Setup pnpm
+        if: github.event.inputs.regenerate_all == 'true' || steps.changed-files.outputs.any_changed == 'true'
         uses: pnpm/action-setup@v4
         with:
           run_install: true
 
       - name: Sync embeds
+        if: github.event.inputs.regenerate_all == 'true' || steps.changed-files.outputs.any_changed == 'true'
         run: pnpm run sync
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           GUILD_ID: ${{ vars.GUILD_ID }}
+          CHANGED_CHANNELS: ${{ github.event.inputs.regenerate_all == 'true' && '' || steps.changed-files.outputs.all_changed_files }}
