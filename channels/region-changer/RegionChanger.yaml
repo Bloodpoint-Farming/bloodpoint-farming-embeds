@@ -1,5 +1,5 @@
 embeds:
-- title: Python Region Changer Script
+- title: Make Your Choice - Region Changer
   description: A tool that allows manual selection of game server regions. By modifying
     the system's hosts file to block certain servers, it helps bypass automatic region
     selection—ideal for those wanting more control over matchmaking without using
@@ -10,14 +10,9 @@ embeds:
   fields:
   - name: 'Instructions:'
     value: |
-      1. Download the latest version of [Python](https://www.python.org/downloads/).
-      2. Download and run [RegionChanger.py](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/releases/latest/download/RegionChanger.py).
-        - [Windows instructions](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/blob/main/README.md#windows-setup)
-        - [Linux instructions](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/blob/main/README.md#linux-setup)
-      3. To change region, type it's corresponding number and press ENTER.
-        - Restart DBD.
-      4. To restore the hosts file, type '0' and press ENTER.
-        - Restart DBD.
+      1. Download the [latest MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest/download/MakeYourChoice.exe).
+      2. Run it Administrator (so that it's able to modify the hosts file).
+      See the [README](https://github.com/laewliet/make-your-choice/blob/main/README.md) on GitHub for more information.
 - color: 2375525
   title: 'Manual Hosts File Overrides'
   description: Manually change your hosts file without the need for scripts or administrative
@@ -31,11 +26,4 @@ embeds:
         - Restart DBD.
       4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.
         - Restart DBD.
-- title: Notes
-  color: 2375525
-  description: |-
-    - View the README on GitHub to find specifics and source code.‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎
-      - [Python Region Changer](https://github.com/Bloodpoint-Farming/Dead-by-Daylight-Region-Changer/blob/main/README.md)
-      - [Hosts File Overrides](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md)
-    - Works for Windows and Linux (SteamOS) and all PC platforms.
-    - While no one has been banned for using this tool, use at your own risk.
+      See the [README](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md) on GitHub for more information.
