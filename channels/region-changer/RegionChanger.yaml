@@ -1,22 +1,24 @@
 embeds:
-- title: Make Your Choice - Region Changer
-  description: A tool that allows manual selection of game server regions. By modifying
-    the system's hosts file to block certain servers, it helps bypass automatic region
-    selection—ideal for those wanting more control over matchmaking without using
-    a VPN.
+- title: Make Your Choice (Recommended) ✨
+  description: >
+    [Make Your Choice](https://github.com/laewliet/make-your-choice) allows you to
+    select your DBD matchmaking region **without a VPN**. It works by blocking all
+    other regions using your `hosts` file. This approach is **safe** since it does
+    not touch the DBD game files.
   color: 2375525
   gallery:
   - attachment://RegionChangerBanner.webp
   fields:
   - name: 'Instructions:'
     value: |
-      1. Download the [latest MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest/download/MakeYourChoice.exe).
-      2. Run it Administrator (so that it's able to modify the hosts file).
-      See the [README](https://github.com/laewliet/make-your-choice/blob/main/README.md) on GitHub for more information.
+      1. Download and run the latest [MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest/download/MakeYourChoice.exe).
+      2. Select your desired regions. (The closest one will be used.)
+      3. Click `Apply Selection`.
+      4. Restart DBD.
+      -# See the [README](https://github.com/laewliet/make-your-choice/blob/main/README.md) on GitHub for more information.
 - color: 2375525
-  title: 'Manual Hosts File Overrides'
-  description: Manually change your hosts file without the need for scripts or administrative
-    permissions.
+  title: 'Manual Hosts File Overrides (Alternative) 🔧'
+  description: '**Manually** change your hosts file **without scripts** or administrative permissions.'
   fields:
   - name: 'Instructions:'
     value: |-
@@ -26,4 +28,4 @@ embeds:
         - Restart DBD.
       4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.
         - Restart DBD.
-      See the [README](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md) on GitHub for more information.
+      -# See the [README](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md) on GitHub for more information.
