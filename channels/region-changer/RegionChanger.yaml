@@ -11,7 +11,7 @@ embeds:
   fields:
   - name: 'Instructions:'
     value: |
-      1. Download and run the latest [MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest/download/MakeYourChoice.exe).
+      1. Download and run the latest [MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest/download/Make.Your.Choice.Win.exe).
       2. Select your desired regions. (The closest one will be used.)
       3. Click `Apply Selection`.
       4. Restart DBD.
