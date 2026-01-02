@@ -1,7 +1,7 @@
 embeds:
 - title: Make Your Choice (Recommended) ✨
   description: >
-    [Make Your Choice](https://github.com/laewliet/make-your-choice) allows you to
+    The [Make Your Choice](https://github.com/laewliet/make-your-choice) region changer allows you to
     select your DBD matchmaking region **without a VPN**. It works by blocking all
     other regions using your `hosts` file. This approach is **safe** since it does
     not touch the DBD game files.
@@ -12,7 +12,8 @@ embeds:
   - name: 'Instructions:'
     value: |
       1. Download and run the latest [MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest/download/Make.Your.Choice.Win.exe).
-      2. Select your desired regions. (The closest one will be used.)
+      2. Select your desired region.
+        -# (If you select multiple regions, only the closest one will be used.)
       3. Click `Apply Selection`.
       4. Restart DBD.
       -# See the [README](https://github.com/laewliet/make-your-choice/blob/main/README.md) on GitHub for more information.
