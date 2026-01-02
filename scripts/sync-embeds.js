@@ -7,6 +7,8 @@ const BOT_TOKEN = process.env.BOT_TOKEN;
 const GUILD_ID = process.env.GUILD_ID;
 const CHANGED_CHANNELS = process.env.CHANGED_CHANNELS
   ? process.env.CHANGED_CHANNELS.split(" ")
+    .map((dir) => dir.replace(/^channels\//, "")) // Strip "channels/" prefix
+    .filter((dir) => dir.length > 0) // Remove empty strings
   : [];
 
 if (!BOT_TOKEN) {
