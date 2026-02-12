@@ -22,7 +22,7 @@
           - [Spin Blight](https://discord.com/channels/1204097271768023090/1376573419038183474/1376573419038183474) `~5 min`
       - type: 14 # separator
       - type: 10 # text
-        content: -# See the [spreadsheet](https://docs.google.com/spreadsheets/d/1m8dF9RnTeqlnLyb1HZAu08hv-mk8POK-2rZU05r8400/edit?usp=sharing) for more builds and details such as time to P100.
+        content: -# See the [spreadsheet](https://docs.google.com/spreadsheets/d/1m8dF9RnTeqlnLyb1HZAu08hv-mk8POK-2rZU05r8400/edit?usp=sharing) for more builds, time to P100, and other details.
 
 # Call to Action.
 # This is split out to a second message for two reasons:
