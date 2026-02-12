@@ -88,14 +88,7 @@ async function syncEmbeds() {
         messages = await channel.messages.fetch({ limit: 100 });
         const botMessages = messages.filter(msg => msg.author.id === client.user.id);
         if (botMessages.size > 0) {
-          const now = Date.now();
-          const twoWeeks = 14 * 24 * 60 * 60 * 1000; // discord API limitation on bulkDelete.
-          const eligible = botMessages.filter(msg => now - msg.createdTimestamp < twoWeeks);
-          if (eligible.size > 0) {
-            await channel.bulkDelete(eligible);
-          }
-          const ineligible = botMessages.filter(msg => now - msg.createdTimestamp >= twoWeeks);
-          for (const msg of ineligible.values()) {
+          for (const msg of botMessages.values()) {
             await msg.delete();
           }
         }
