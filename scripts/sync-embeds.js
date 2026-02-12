@@ -110,18 +110,7 @@ async function syncEmbeds() {
           data = yaml.load(fs.readFileSync(filePath, "utf8"));
         }
 
-        let messages = [];
-        if (Array.isArray(data)) {
-          // Top-level array: each element is an embed message
-          messages = data.map((embed) => ({ embeds: [embed] }));
-        } else if (data.embeds) {
-          // Top-level object with "embeds" property
-          messages = [{ embeds: data.embeds }];
-        } else {
-          // Assume single embed object (backward compatibility)
-          messages = [{ embeds: [data] }];
-        }
-
+        const messages = Array.isArray(data) ? data : [data];
         for (const message of messages) {
           const attachmentFiles = collectAttachments(message);
           const filesToAttach = attachmentFiles

@@ -1,17 +1,39 @@
-embeds:
-  - title: Table of Contents
-    description: |-
-      Discover Our Farming Builds Below — Complete with Video Showcases!
-      To get started, [join](https://discord.com/channels/1204097271768023090/1376558693818044488/1376558693818044488) or [start](https://discord.com/channels/1204097271768023090/1376558874236027050/1376558874236027050) a farming group.
-      ### Easy
-      - [Brainless Bubba DC (BBDC)](https://discord.com/channels/1204097271768023090/1396563080862761070/1396563080862761070) `~2 min`
-      ### Medium
-      - [Pyramid Head R4K (PHR4K)](https://discord.com/channels/1204097271768023090/1401503159284793356/1401503159284793356) `~5 min`
-      - [Reactive 4K (R4K)](https://discord.com/channels/1204097271768023090/1376572491983491072/1376572491983491072) `~6 min`
-      ### Hard
-      - [3/4-Man Reactive DC (R3DC, R4DC)](https://discord.com/channels/1204097271768023090/1401649273321422971) `~3 min`
-      - [Spin Blight](https://discord.com/channels/1204097271768023090/1376573419038183474/1376573419038183474) `~5 min`
-    color: 2375525
-    gallery:
-      - attachment://FarmingBuildsBanner.webp
-    fields: []
+# Component V2 types:
+# https://discord.com/developers/docs/components/reference#component-object-component-types
+- flags: 32768 # IsComponentsV2
+  components:
+    - type: 12 # media gallery
+      items:
+        - media: 
+            url: attachment://FarmingBuildsBanner.webp
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          Each method balances BP/hour, BP/offering, and effort differently. Video walkthroughs are available in the links below.
+          ### Easy
+          - [Brainless Bubba DC (BBDC)](https://discord.com/channels/1204097271768023090/1396563080862761070/1396563080862761070) `~2 min`
+          ### Medium
+          - [Pyramid Head R4K (PHR4K)](https://discord.com/channels/1204097271768023090/1401503159284793356/1401503159284793356) `~5 min`
+          - [Reactive 4K (R4K)](https://discord.com/channels/1204097271768023090/1376572491983491072/1376572491983491072) `~6 min`
+          ### Hard
+          - [3/4-Man Reactive DC (R3DC, R4DC)](https://discord.com/channels/1204097271768023090/1401649273321422971) `~3 min`
+          - [Spin Blight](https://discord.com/channels/1204097271768023090/1376573419038183474/1376573419038183474) `~5 min`
+      - type: 14 # separator
+      - type: 10 # text
+        content: -# See the [spreadsheet](https://docs.google.com/spreadsheets/d/1m8dF9RnTeqlnLyb1HZAu08hv-mk8POK-2rZU05r8400/edit?usp=sharing) for more builds and details such as time to P100.
+
+# Call to Action.
+# This is split out to a second message for two reasons:
+# 1. excluded when forwarding the first message to #general-chat
+# 2. smaller width to visually differentiate it from the first message since it's unrelated to farming-builds.
+- flags: 32768 # IsComponentsV2
+  components:
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          To get started, [join](https://discord.com/channels/1204097271768023090/1376558693818044488/1376558693818044488) or [start](https://discord.com/channels/1204097271768023090/1376558874236027050/1376558874236027050) a farming group.
+          
