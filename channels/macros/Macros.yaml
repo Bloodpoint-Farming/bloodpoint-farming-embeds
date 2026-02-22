@@ -1,18 +1,29 @@
-embeds:
-  - title: Macros for Farming!
-    description: We've created macros to automate some of the repetitive aspects of farming.
-    color: 2375525
-    gallery:
-      - attachment://MacrosBanner.webp
-    fields:
-      - name: 'How to Use:'
-        value: |-
+# Component V2 types:
+# https://discord.com/developers/docs/components/reference#component-object-component-types
+- flags: 32768 # IsComponentsV2
+  components:
+    - type: 12 # media gallery
+      items:
+        - media: 
+            url: attachment://MacrosBanner.webp
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          ## Macros for Farming!
+          We've created macros to automate some of the repetitive aspects of farming.
+          ### How to Use:
           1. Download and install [Auto Hotkey v2.0](https://www.autohotkey.com/).
           2. Download and extract [Bloodpoint-Farming-Macros.zip](https://bloodpointfarming.github.io/Bloodpoint-Farming-Macros/Bloodpoint-Farming-Macros.zip).
           3. Open an **.ahk** file. The macro is now running.
           4. To turn off the macro; System Tray > Right click the icon > Exit.
-      - name: 'Notes:'
-        value: |-
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          ### Notes:
           - Each macro can be easily edited using notepad.
           - View the [README](https://github.com/BloodpointFarming/Bloodpoint-Farming-Macros/blob/main/README.md) on GitHub to find specifics about individual macros.
           - Get updates by redownloading the macros in Step 2.
