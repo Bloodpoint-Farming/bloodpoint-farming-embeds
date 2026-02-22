@@ -1,32 +1,36 @@
-embeds:
-- title: Make Your Choice (Recommended) ✨
-  description: >
-    The [Make Your Choice](https://github.com/laewliet/make-your-choice) region changer allows you to
-    select your DBD matchmaking region **without a VPN**. It works by blocking all
-    other regions using your `hosts` file. This approach is **safe** since it does
-    not touch the DBD game files.
-  color: 2375525
-  gallery:
-  - attachment://RegionChangerBanner.webp
-  fields:
-  - name: 'Instructions:'
-    value: |
-      1. Download and run the latest [MakeYourChoice.exe](https://github.com/laewliet/make-your-choice/releases/latest).
-      2. Select your desired region.
-        -# (If you select multiple regions, only the closest one will be used.)
-      3. Click `Apply Selection`.
-      4. Restart DBD.
-      -# See the [README](https://github.com/laewliet/make-your-choice/blob/main/README.md) on GitHub for more information.
-- color: 2375525
-  title: 'Manual Hosts File Overrides (Alternative) 🔧'
-  description: '**Manually** change your hosts file **without scripts** or administrative permissions.'
-  fields:
-  - name: 'Instructions:'
-    value: |-
-      1. Backup your `C:\Windows\System32\drivers\etc\hosts` by copying and saving it elsewhere.
-      2. Download [dbd-hosts-file-overrides-main.zip](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/archive/refs/heads/main.zip).
-      3. To change region, copy the `hosts` file for your desired region from the zip and paste it in the path from Step 1.
-        - Restart DBD.
-      4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.
-        - Restart DBD.
-      -# See the [README](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md) on GitHub for more information.
+# Component V2 types:
+# https://discord.com/developers/docs/components/reference#component-object-component-types
+- flags: 32768 # IsComponentsV2
+  components:
+    - type: 12 # media gallery
+      items:
+        - media: 
+            url: attachment://RegionChangerBanner.webp
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          ## Make Your Choice (Recommended) ✨
+          The [Make Your Choice](https://github.com/crweul/make-your-choice) region changer allows you to select your DBD matchmaking region **without a VPN**. It works by blocking all other regions using your `hosts` file. This approach is **safe** since it does not touch the DBD game files.
+          ### Instructions:
+          1. Download and run the latest [MakeYourChoice.exe](https://github.com/crweul/make-your-choice/releases/latest).
+          2. Select your desired region.
+            -# (If you select multiple regions, only the closest one will be used.)
+          3. Click `Apply Selection`.
+          4. Restart DBD.
+            -# See the [README](https://github.com/crweul/make-your-choice/blob/main/README.md) on GitHub for more information.
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          ## Manual Hosts File Overrides (Alternative) 🔧
+          **Manually** change your hosts file **without scripts** or administrative permissions.
+          1. Backup your `C:\Windows\System32\drivers\etc\hosts` by copying and saving it elsewhere.
+          2. Download [dbd-hosts-file-overrides-main.zip](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/archive/refs/heads/main.zip).
+          3. To change region, copy the `hosts` file for your desired region from the zip and paste it in the path from Step 1.
+            - Restart DBD.
+          4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.
+            - Restart DBD.
+          -# See the [README](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md) on GitHub for more information.
