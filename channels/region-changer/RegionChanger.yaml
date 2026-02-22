@@ -19,7 +19,9 @@
             -# (If you select multiple regions, only the closest one will be used.)
           3. Click `Apply Selection`.
           4. Restart DBD.
-            -# See the [README](https://github.com/crweul/make-your-choice/blob/main/README.md) on GitHub for more information.
+          ### Support:
+          -# See the [README](https://github.com/crweul/make-your-choice/blob/main/README.md) on GitHub for more information.
+          -# Join the [Make Your Choice discord server](https://discord.gg/xEMyAA8gn8) for support.
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
