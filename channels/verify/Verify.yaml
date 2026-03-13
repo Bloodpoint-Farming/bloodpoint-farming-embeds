@@ -1,0 +1,18 @@
+# Component V2 types:
+# https://discord.com/developers/docs/components/reference#component-object-component-types
+- flags: 32768 # IsComponentsV2
+  components:
+    - type: 12 # media gallery
+      items:
+        - media: 
+            url: attachment://VerifyBanner.webp
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          ## Get Verified ✅
+          We use Double Counter to help keep the server safe!
+          - Click the green "Verify" button to get the <@&1204119127401173012> role and gain access to the server.
+          - If you're having issues with verification make sure you have your VPN/Proxy turned off or try from desktop.
+          Still having issues? <@#1482158248889942146> for assistance.
