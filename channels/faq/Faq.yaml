@@ -12,7 +12,7 @@
       - type: 10 # text
         content: |-
           ## Table of Contents
-          Find the answers to Frequently Asked Questions below! If you don't see what you're looking for, feel free to create a support ticket and submit your question to have it added!
+          Find the answers to Frequently Asked Questions below!
           ### Getting Started
           - [How Does Farming Work?](https://discord.com/channels/1204097271768023090/1376558431665782895/1376558431665782895)
           - [How Do I Join a Farming Group?](https://discord.com/channels/1204097271768023090/1376558693818044488/1376558693818044488)
@@ -37,3 +37,7 @@
           - [Can I Use Cheats or Injected Accounts?](https://ptb.discord.com/channels/1204097271768023090/1399878354378690711/1399878354378690711)
           - [Can I Discuss Asia/Korea Farming in This Server?](https://discord.com/channels/1204097271768023090/1376561856495484999/1376561856495484999)
           - [How Do I Earn Specific Roles?](https://discord.com/channels/1204097271768023090/1376561991958925383/1376561991958925383)
+      - type: 14 # separator
+      - type: 10 # text
+        content: |-
+          -# Feel free to create a [support ticket](https://discord.com/channels/1204097271768023090/1233111063503835268) and submit your question to have it added!

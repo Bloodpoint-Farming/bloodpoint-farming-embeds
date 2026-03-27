@@ -19,9 +19,11 @@
             -# (If you select multiple regions, only the closest one will be used.)
           3. Click `Apply Selection`.
           4. Restart DBD.
-          ### Support:
+      - type: 14 # separator
+      - type: 10 # text
+        content: |-
           -# See the [README](https://github.com/crweul/make-your-choice/blob/main/README.md) on GitHub for more information.
-          -# Join the [Make Your Choice discord server](https://discord.gg/xEMyAA8gn8) for support.
+          -# Join the [Make Your Choice Discord server](https://discord.gg/xEMyAA8gn8) for support.
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
@@ -35,4 +37,8 @@
             - Restart DBD.
           4. To restore the hosts file, copy your backup `hosts` file and paste it in the path from Step 1.
             - Restart DBD.
+      - type: 14 # separator
+      - type: 10 # text
+        content: |-
+          -# Visit <#1233111063503835268> for assistance.
           -# See the [README](https://github.com/Bloodpoint-Farming/dbd-hosts-file-overrides/blob/main/README.md) on GitHub for more information.

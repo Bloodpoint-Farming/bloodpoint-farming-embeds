@@ -14,4 +14,7 @@
           ## Get Verified ✅
           We use [Double Counter](https://doublecounter.gg/) to help keep the server safe!
           - Click the green **Verify** button below to gain access to the server.
+      - type: 14 # separator
+      - type: 10 # text
+        content: |-
           Visit <#1482158248889942146> for assistance.
