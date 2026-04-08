@@ -6,6 +6,8 @@
       items:
         - media: 
             url: attachment://RulesBanner.webp
+- flags: 32768 # IsComponentsV2
+  components:
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
@@ -18,6 +20,8 @@
           -# All content in official server channels is property of the server or its creators. Do not use or repost it outside the server without permission. Publicly broadcasting farming (e.g., on YouTube, TikTok, Twitch) is prohibited.
           **C. Do Not Discuss Banned Topics** 🔨
           -# In order to stay aligned with [BHVR's terms of service](https://www.bhvr.com/terms-of-use/), discussions about Asia farming, cheats/injects, or leaks are prohibited. Any mention of these topics will be removed and may result in disciplinary action.
+- flags: 32768 # IsComponentsV2
+  components:
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
@@ -30,6 +34,8 @@
           -# This includes excessive messages, emojis, attachments, links, pings, and mic spam. Keep communication clear and comfortable for all.
           **C. No Self-Promotion or Advertising** 📢
           -# Promoting Discord servers, social media, products, and services in public channels or direct messages is not allowed without staff approval.
+- flags: 32768 # IsComponentsV2
+  components:
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
@@ -47,6 +53,8 @@
           -# This includes illegal downloads, adult content, or any content that violates [Discord's Terms of Service](https://discord.com/terms).
           **E. Personal Information** 🔒
           -# For everyone’s safety, avoid sharing personal info (addresses, phone numbers, emails, socials, etc.). Webcam feeds are fine for gameplay with overlays, but using them to show faces is not allowed.
+- flags: 32768 # IsComponentsV2
+  components:
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
@@ -55,6 +63,8 @@
           # 4. We're Here to Farm
           **A. No Griefing or Trolling In-Game** 👺
           -# Repeated bodyblocking, dodging killer swings, failing to follow group-specific requirements, purposefully bringing incorrect perks or offerings, or any other actions that prolong matches are against the rules.
+- flags: 32768 # IsComponentsV2
+  components:
     - type: 17 # container
       accent_color: 2375525 # blueish
       components:
