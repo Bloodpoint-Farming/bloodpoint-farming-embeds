@@ -20,7 +20,6 @@ embeds:
       - name: Admins <:zAdministrator:1318646409217703986>
         value: |-
           > <@414487291755757578>
-          > <@298899398610649089>
           > <@184516916793049095>
         inline: true
       - name: Mods <:zModerator:1318646412207980756>
