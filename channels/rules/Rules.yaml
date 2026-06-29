@@ -61,8 +61,8 @@
       - type: 10 # text
         content: |-
           # 4. We're Here to Farm
-          **A. No Griefing or Trolling In-Game** 👺
-          -# Repeated bodyblocking, dodging killer swings, failing to follow group-specific requirements, purposefully bringing incorrect perks or offerings, or any other actions that prolong matches are against the rules.
+          **A. No Griefing or Trolling** 👺
+          -# Intentional actions that disrupt another farmer's experience—including bodyblocking, dodging killer swings, disregarding group-specific rules, bringing incorrect perks/offerings/items, prolonging matches, unwanted matchmaking sniping, or disrupting voice channels—are against the rules.
 - flags: 32768 # IsComponentsV2
   components:
     - type: 17 # container
