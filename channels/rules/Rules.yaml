@@ -43,8 +43,7 @@
         content: |-
           # 3. Don't Create Problems
           **A. No Political or Religious Topics** ⚖️
-          -# Avoid discussions on politics and religion to maintain a neutral and welcoming.
-          environment.
+          -# Avoid discussions on politics and religion to maintain a neutral and welcoming environment.
           **B. No Hate Speech or Harmful Language** 😠
           -# Racism, sexism, discrimination, and personal attacks are strictly prohibited.
           **C. Inappropriate Profiles** 👤
@@ -62,7 +61,7 @@
         content: |-
           # 4. We're Here to Farm
           **A. No Griefing or Trolling** 👺
-          -# Intentional actions that disrupt another farmer's experience—including bodyblocking, dodging killer swings, disregarding group-specific rules, bringing incorrect perks/offerings/items, prolonging matches, unwanted matchmaking sniping, or disrupting voice channels—are against the rules.
+          -# Actions intended to disrupt another farmer's experience—including bodyblocking, dodging killer swings, disregarding group-specific rules, bringing incorrect perks/offerings/items, prolonging matches, unwanted matchmaking sniping, or disrupting voice channels—are against the rules.
 - flags: 32768 # IsComponentsV2
   components:
     - type: 17 # container
