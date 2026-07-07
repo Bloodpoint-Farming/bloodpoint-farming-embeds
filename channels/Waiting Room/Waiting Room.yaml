@@ -1,0 +1,13 @@
+# Component V2 types:
+# https://discord.com/developers/docs/components/reference#component-object-component-types
+- flags: 32768 # IsComponentsV2
+  components:
+    - type: 17 # container
+      accent_color: 2375525 # blueish
+      components:
+      - type: 10 # text
+        content: |-
+          # Waiting Room
+          - Join to allow groups to drag you in when spots are available.
+          - Waiting here **does not guarantee** a spot.
+          - See [How Do I Join A Farming Group?](https://discord.com/channels/1204097271768023090/1376558693818044488) for details.
